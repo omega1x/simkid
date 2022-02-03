@@ -20,9 +20,20 @@ Use `simkid-ffmpeg.sh` to compile PNG-frames into final MP4-video.
 
 Clone the repo and run:
 
-```
+```sh
 go run .
 ./simkid-ffmpgeg.sh
 mpv "./videoset/$(ls -Art ./videoset | tail -n 1)"
+```
+
+Or having `simkid` artefact built with
+
+```sh
+go build .
+```
+simply watch the resulting video invoking
+
+```sh
+./simkid.sh
 ```
 
